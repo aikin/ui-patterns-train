@@ -1,0 +1,23 @@
+{
+  "name": "ui-patterns-train",
+  "version": "1.0.0",
+  "description": "ui patterns train",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aikin/ui-patterns-train.git"
+  },
+  "author": "aikin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aikin/ui-patterns-train/issues"
+  },
+  "homepage": "https://github.com/aikin/ui-patterns-train",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-livereload": "^3.8.0"
+  }
+}
