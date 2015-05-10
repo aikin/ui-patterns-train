@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:700);
+
 *, *:before, *:after {
 	margin: 0;
 	padding: 0;
@@ -24,6 +26,16 @@ h2 {
 	margin-bottom: 1em;
 	border-bottom: 2px solid #eee;
 	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+hr {
+	display: block;
+	margin: 2em 0;
+	padding: 0;
+	height: 1px;
+	border: 0;
+	border-top: 2px solid #eee;
 }
 
 .ghost-btn-hello-container {
@@ -35,7 +47,7 @@ h2 {
 	position: relative;
 }
 
-.ghost-btn-hello {
+.ghost-btn-hello-container .ghost-btn-hello {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -56,7 +68,7 @@ h2 {
 	letter-spacing: 10px;
 }
 
-.ghost-btn-hello:before {
+.ghost-btn-hello-container .ghost-btn-hello:before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -67,6 +79,157 @@ h2 {
 	left: 8px;
 }
 
-.ghost-btn-hello:hover {
+.ghost-btn-hello-container .ghost-btn-hello:hover {
 	border: 2px solid white;
 }
+
+
+
+.ghost-btn-hover-container {
+	background-color: #1abc9c;
+	font-family: 'Cabin', sans-serif;
+	position: relative;
+	height: 200px;
+}
+
+.ghost-btn-hover-container .ghost-btn-hover-simple,
+.ghost-btn-hover-container .ghost-btn-hover-3d {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 220px;
+	height: 80px;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 80px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+.ghost-btn-hover-container .ghost-btn-hover-simple {
+	left: 10%;
+	right: auto;
+}
+
+.ghost-btn-hover-container .ghost-btn-hover-simple:before,
+.ghost-btn-hover-container .ghost-btn-hover-simple:after,
+.ghost-btn-hover-container .ghost-btn-hover-3d:before {
+	content: "";
+	position: absolute;
+}
+
+.ghost-btn-hover-container .ghost-btn-hover-simple:before,
+.ghost-btn-hover-container .ghost-btn-hover-3d:before {
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	border: 3px solid #fff;
+}
+
+.ghost-btn-hover-container .ghost-btn-hover-simple:hover {
+	background-color: #fff;
+	color: #1abc9c;
+}
+
+.ghost-btn-hover-container .ghost-btn-hover-simple:after {
+	background-color: #fff;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	opacity: 1;
+}
+
+.ghost-btn-hover-container .ghost-btn-hover-simple:hover:after {
+	width: 220px;
+	height: 80px;
+	opacity: 0;
+}
+
+.ghost-btn-hover-container .ghost-btn-hover-3d {
+	right: 10%;
+	left: auto;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	perspective: 1000;
+	-webkit-perspective: 1000; /*目前浏览器都不支持 perspective 属性。 Chrome 和 Safari 支持替代的 -webkit-perspective 属性。*/
+	transform-style: preserve-3d; /**/
+	-webkit-transform-style: preserve-3d;
+}
+
+.ghost-btn-hover-container .ghost-btn-hover-3d:before {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	transform-style: preserve-3d;  /*transform-style 属性规定如何在 3D 空间中呈现被嵌套的元素。Firefox 支持 transform-style 属性。 Chrome、Safari 和 Opera 支持替代的 -webkit-transform-style 属性。*/
+	-webkit-transform-style: preserve-3d;
+}
+
+.ghost-btn-hover-container .ghost-btn-hover-3d .front,
+.ghost-btn-hover-container .ghost-btn-hover-3d .back {
+	position: absolute;
+	color: white;
+	width: 220px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 24px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	backface-visibility: hidden; /*backface-visibility 属性定义当元素不面向屏幕时是否可见。*/
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+.ghost-btn-hover-container .ghost-btn-hover-3d .front {
+	z-index: 2;
+}
+.ghost-btn-hover-container .ghost-btn-hover-3d .back {
+	background-color: white;
+	color: #1abc9c;
+	transform: rotate3d(45, 45, 0, 180deg);
+	-webkit-transform: rotate3d(45, 45, 0, 180deg);
+	-moz-transform: rotate3d(45, 45, 0, 180deg);
+	-ms-transform: rotate3d(45, 45, 0, 180deg);
+	-o-transform: rotate3d(45, 45, 0, 180deg);
+}
+.ghost-btn-hover-container .ghost-btn-hover-3d:hover {
+	transform: rotate3d(45, 45, 0, 180deg);
+	-webkit-transform: rotate3d(45, 45, 0, 180deg);
+	-moz-transform: rotate3d(45, 45, 0, 180deg);
+	-ms-transform: rotate3d(45, 45, 0, 180deg);
+	-o-transform: rotate3d(45, 45, 0, 180deg);
+}
+.ghost-btn-hover-container .ghost-btn-hover-3d:hover:before {
+	transform: rotate3d(45, -45, 0, 180deg);
+	-webkit-transform: rotate3d(45, -45, 0, 180deg);
+	-moz-transform: rotate3d(45, -45, 0, 180deg);
+	-ms-transform: rotate3d(45, -45, 0, 180deg);
+	-o-transform: rotate3d(45, -45, 0, 180deg);
+}
+
+
+
