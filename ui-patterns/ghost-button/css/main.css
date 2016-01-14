@@ -38,6 +38,7 @@ hr {
 	border-top: 2px solid #eee;
 }
 
+/*ghost-btn-hello-container area*/
 .ghost-btn-hello-container {
 	background-color: #8e44ad;
 	font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
@@ -83,7 +84,7 @@ hr {
 	border: 2px solid white;
 }
 
-
+/*ghost-btn-hover-container area*/
 
 .ghost-btn-hover-container {
 	background-color: #1abc9c;
@@ -236,7 +237,7 @@ hr {
 }
 
 
-
+/*ghost-btn-iuvo-container area*/
 
 .ghost-btn-iuvo-container {
 	position: relative;
@@ -374,4 +375,36 @@ hr {
 .ghost-btn-iuvo-container .button:hover .line-left {
 	height: 100%;
 	bottom: 0;
+}
+
+.ghost-btn-iuvo-container .tip {
+	position: absolute;
+	line-height: 35px;
+	background-color: #2DCB70;
+	color: #fff;
+	margin: 0 auto;
+	padding: 0 14px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	opacity: 1;
+}
+
+.ghost-btn-iuvo-container .tip em {
+	font-style: normal;
+}
+
+.ghost-btn-iuvo-container .tip span {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border: 7px solid transparent;
+	border-top-color: #2DCB70;
 }
