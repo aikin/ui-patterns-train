@@ -38,7 +38,53 @@ hr {
 	border-top: 2px solid #eee;
 }
 
-/*ghost-btn-hello-container area*/
+/*ghost btn line area*/
+.ghost-btn-line-frame {
+	background-color: #8e44ad;
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', serif;
+	font-weight: 100;
+	font-size: 24px;
+	height: 200px;
+	position: relative;
+}
+
+.ghost-btn-line-frame--content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 400px;
+	height: 100px;
+	margin: auto;
+	border: 2px solid #8e44ad;
+	line-height: 100px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	letter-spacing: 10px;
+}
+
+.ghost-btn-line-frame--content:before {
+	content: "";
+	display: block;
+	position: absolute;
+	border: 2px solid #ffffff;
+	width: 380px;
+	height: 80px;
+	top: 8px;
+	left: 8px;
+}
+
+.ghost-btn-line-frame--content:hover {
+	border: 2px #fff solid;
+}
+
+
 .ghost-btn-hello-container {
 	background-color: #8e44ad;
 	font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
