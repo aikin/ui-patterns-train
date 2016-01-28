@@ -48,7 +48,7 @@ hr {
 	position: relative;
 }
 
-.ghost-btn-line-frame--content {
+.ghost-btn-line-frame__content {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -69,7 +69,7 @@ hr {
 	letter-spacing: 10px;
 }
 
-.ghost-btn-line-frame--content:before {
+.ghost-btn-line-frame__content:before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -80,67 +80,22 @@ hr {
 	left: 8px;
 }
 
-.ghost-btn-line-frame--content:hover {
+.ghost-btn-line-frame__content:hover {
 	border: 2px #fff solid;
 }
 
 
-.ghost-btn-hello-container {
-	background-color: #8e44ad;
-	font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
-	font-weight: 100;
-	font-size: 24px;
-	height: 200px;
-	position: relative;
-}
-
-.ghost-btn-hello-container .ghost-btn-hello {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 400px;
-	height: 100px;
-	margin: auto;
-	border: 2px solid #8e44ad;
-	line-height: 100px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #ffffff;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	letter-spacing: 10px;
-}
-
-.ghost-btn-hello-container .ghost-btn-hello:before {
-	content: "";
-	display: block;
-	position: absolute;
-	border: 2px solid #ffffff;
-	width: 380px;
-	height: 80px;
-	top: 8px;
-	left: 8px;
-}
-
-.ghost-btn-hello-container .ghost-btn-hello:hover {
-	border: 2px solid white;
-}
-
 /*ghost-btn-hover-container area*/
 
-.ghost-btn-hover-container {
+.ghost-btn-hover-frame {
 	background-color: #1abc9c;
 	font-family: 'Cabin', sans-serif;
 	position: relative;
 	height: 200px;
 }
 
-.ghost-btn-hover-container .ghost-btn-hover-simple,
-.ghost-btn-hover-container .ghost-btn-hover-3d {
+.ghost-btn-hover-simple__item,
+.ghost-btn-hover-3d__item {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -157,20 +112,20 @@ hr {
 }
 
 
-.ghost-btn-hover-container .ghost-btn-hover-simple {
+.ghost-btn-hover-simple__item {
 	left: 10%;
 	right: auto;
 }
 
-.ghost-btn-hover-container .ghost-btn-hover-simple:before,
-.ghost-btn-hover-container .ghost-btn-hover-simple:after,
-.ghost-btn-hover-container .ghost-btn-hover-3d:before {
+.ghost-btn-hover-simple__item:before,
+.ghost-btn-hover-simple__item:after,
+.ghost-btn-hover-3d__item:before {
 	content: "";
 	position: absolute;
 }
 
-.ghost-btn-hover-container .ghost-btn-hover-simple:before,
-.ghost-btn-hover-container .ghost-btn-hover-3d:before {
+.ghost-btn-hover-simple__item:before,
+.ghost-btn-hover-3d__item:before {
 	top: -10px;
 	left: -10px;
 	right: -10px;
@@ -178,12 +133,12 @@ hr {
 	border: 3px solid #fff;
 }
 
-.ghost-btn-hover-container .ghost-btn-hover-simple:hover {
+.ghost-btn-hover-simple__item:hover {
 	background-color: #fff;
 	color: #1abc9c;
 }
 
-.ghost-btn-hover-container .ghost-btn-hover-simple:after {
+.ghost-btn-hover-simple__item:after {
 	background-color: #fff;
 	top: 50%;
 	left: 50%;
@@ -202,13 +157,13 @@ hr {
 	opacity: 1;
 }
 
-.ghost-btn-hover-container .ghost-btn-hover-simple:hover:after {
+.ghost-btn-hover-simple__item:hover:after {
 	width: 220px;
 	height: 80px;
 	opacity: 0;
 }
 
-.ghost-btn-hover-container .ghost-btn-hover-3d {
+.ghost-btn-hover-3d__item {
 	right: 10%;
 	left: auto;
 	-webkit-transition: all 0.3s ease;
@@ -222,7 +177,7 @@ hr {
 	-webkit-transform-style: preserve-3d;
 }
 
-.ghost-btn-hover-container .ghost-btn-hover-3d:before {
+.ghost-btn-hover-3d__item:before {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
@@ -232,8 +187,8 @@ hr {
 	-webkit-transform-style: preserve-3d;
 }
 
-.ghost-btn-hover-container .ghost-btn-hover-3d .front,
-.ghost-btn-hover-container .ghost-btn-hover-3d .back {
+.ghost-btn-hover-3d__front,
+.ghost-btn-hover-3d__back {
 	position: absolute;
 	color: white;
 	width: 220px;
@@ -255,10 +210,10 @@ hr {
 	-ms-backface-visibility: hidden;
 }
 
-.ghost-btn-hover-container .ghost-btn-hover-3d .front {
+.ghost-btn-hover-3d__front {
 	z-index: 2;
 }
-.ghost-btn-hover-container .ghost-btn-hover-3d .back {
+.ghost-btn-hover-3d__back {
 	background-color: white;
 	color: #1abc9c;
 	transform: rotate3d(45, 45, 0, 180deg);
@@ -267,14 +222,14 @@ hr {
 	-ms-transform: rotate3d(45, 45, 0, 180deg);
 	-o-transform: rotate3d(45, 45, 0, 180deg);
 }
-.ghost-btn-hover-container .ghost-btn-hover-3d:hover {
+.ghost-btn-hover-3d__item:hover {
 	transform: rotate3d(45, 45, 0, 180deg);
 	-webkit-transform: rotate3d(45, 45, 0, 180deg);
 	-moz-transform: rotate3d(45, 45, 0, 180deg);
 	-ms-transform: rotate3d(45, 45, 0, 180deg);
 	-o-transform: rotate3d(45, 45, 0, 180deg);
 }
-.ghost-btn-hover-container .ghost-btn-hover-3d:hover:before {
+.ghost-btn-hover-3d__item:hover:before {
 	transform: rotate3d(45, -45, 0, 180deg);
 	-webkit-transform: rotate3d(45, -45, 0, 180deg);
 	-moz-transform: rotate3d(45, -45, 0, 180deg);
