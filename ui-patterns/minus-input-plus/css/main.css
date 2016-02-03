@@ -12,7 +12,12 @@
 	position: relative;
 	display: table;
 	border-collapse: separate;
-	width: 50%;
+	width: 30%;
+}
+
+.btn:focus,
+.minus-input-plus__section:focus {
+	outline: none;
 }
 
 .minus-input-plus__section {
@@ -68,10 +73,10 @@
 }
 
 .minus-input-plus__number {
-	border-radius: 0;
 	box-sizing: border-box;
 	display: table-cell;
 	text-align: center;
+	border-radius: 0;
 	font: inherit;
 	position: relative;
 	z-index: 2;
