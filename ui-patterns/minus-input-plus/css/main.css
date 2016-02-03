@@ -9,10 +9,21 @@
 
 .minus-input-plus {
 	margin: auto;
-	position: relative;
 	display: table;
-	border-collapse: separate;
 	width: 30%;
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	vertical-align: middle;
+	background-image: none;
+	border: 1px solid transparent;
 }
 
 .btn:focus,
@@ -21,68 +32,26 @@
 }
 
 .minus-input-plus__section {
-	position: relative;
 	display: table-cell;
-	font-size: 0;
-	white-space: nowrap;
 	vertical-align: middle;
 	width: 1%;
 }
 
 .minus-input-plus__minus {
-	position: relative;
-	display: inline-block;
-	padding: 6px 12px;
-	margin-bottom: 0;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.42857143;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	background-image: none;
-	border: 1px solid transparent;
 	border-radius: 4px 0 0 4px;
 	margin-right: -1px;
 }
 
 .minus-input-plus__plus {
-	margin-left: -1px;
-	position: relative;
-	display: inline-block;
-	padding: 6px 12px;
-	margin-bottom: 0;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.42857143;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	background-image: none;
-	border: 1px solid transparent;
 	border-radius: 0 4px 4px 0;
+	margin-left: -1px;
 }
 
 .minus-input-plus__number {
 	box-sizing: border-box;
 	display: table-cell;
 	text-align: center;
-	border-radius: 0;
-	font: inherit;
-	position: relative;
-	z-index: 2;
-	float: left;
 	width: 100%;
-	margin: 0;
 	height: 34px;
 	padding: 6px 12px;
 	font-size: 14px;
