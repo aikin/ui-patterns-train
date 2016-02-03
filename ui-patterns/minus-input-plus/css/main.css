@@ -1,0 +1,93 @@
+.content {
+	width: 80%;
+	height: 100px;
+	text-align: center;
+	background: rgba(179, 179, 179, 0.25);
+	margin: 180px auto;
+	padding-top: 60px;
+}
+
+.minus-input-plus {
+	margin: auto;
+	position: relative;
+	display: table;
+	border-collapse: separate;
+	width: 50%;
+}
+
+.minus-input-plus__section {
+	position: relative;
+	display: table-cell;
+	font-size: 0;
+	white-space: nowrap;
+	vertical-align: middle;
+	width: 1%;
+}
+
+.minus-input-plus__minus {
+	position: relative;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px 0 0 4px;
+	margin-right: -1px;
+}
+
+.minus-input-plus__plus {
+	margin-left: -1px;
+	position: relative;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 0 4px 4px 0;
+}
+
+.minus-input-plus__number {
+	border-radius: 0;
+	box-sizing: border-box;
+	display: table-cell;
+	text-align: center;
+	font: inherit;
+	position: relative;
+	z-index: 2;
+	float: left;
+	width: 100%;
+	margin: 0;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background: #fff none;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
